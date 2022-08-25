@@ -13,6 +13,7 @@ function App() {
 axios.get("https://api.nasa.gov/planetary/apod?api_key=mQxXjap2fhcS1N0x9lsr1UGRLQf5DIr0suADxgyP")
   .then(res => {
     setNasaData(res.data)
+    console.log(res.data)
   })
   .catch(err=> {
     console.error(err)
@@ -21,7 +22,7 @@ axios.get("https://api.nasa.gov/planetary/apod?api_key=mQxXjap2fhcS1N0x9lsr1UGRL
 
   return (
     <div className="App">
-      {nasaData && <NasaPhoto photo = {nasaData}/>}
+      <NasaPhoto photo = {nasaData}/>
     </div>
   );
 }
@@ -29,3 +30,17 @@ axios.get("https://api.nasa.gov/planetary/apod?api_key=mQxXjap2fhcS1N0x9lsr1UGRL
 export default App;
 
 
+/*<div className="App">
+<header className="App-header">
+  <p>NASA Photo of the Day!</p>
+</header>
+<div className="Main-body">
+    <img src="https://apod.nasa.gov/apod/image/2208/Tiangong_transiting_moon_Lucy_Hu_APOD_submission.jpg"/>
+    <p>This is the photo of the day!</p>
+</div>
+<footer>
+  <p>
+    Visit us at our website.
+  </p>
+</footer>
+</div>*/

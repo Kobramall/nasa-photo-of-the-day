@@ -30,17 +30,13 @@
 
 footer{
   background-color: #282c34;
-  min-height: 10vh;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 100%;
+  font-size: 400%;
   color: white;
-}
-
-.Main-body img{
-  width:75%;
 }
 
 @keyframes App-logo-spin {
