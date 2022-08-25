@@ -3,16 +3,8 @@ import "./App.css";
 import axios from "axios";
   import NasaPhoto from "./NasaPhoto";
 //https://api.nasa.gov/planetary/apod?api_key=mQxXjap2fhcS1N0x9lsr1UGRLQf5DIr0suADxgyP
-import { themeProvider } from "styled-components"
-import styled from 'styled-components';
+import {themeProvider } from "styled-component"
 
-const StyledPhoto = styled.div`
-   color: "blue";
-   display: "flex";
-   justify-content: space-evenly;
-   background: ${pr => pr.theme.primaryColor};
-   padding: 20px;
-`
 
 function App() {
   const [nasaData, setNasaData] = useState();
@@ -28,9 +20,9 @@ axios.get("https://api.nasa.gov/planetary/apod?api_key=mQxXjap2fhcS1N0x9lsr1UGRL
 }, []);
 
   return (
-    <StyledPhoto className="App">
+    <div className="App">
       {nasaData && <NasaPhoto photo = {nasaData}/>}
-    </StyledPhoto>
+    </div>
   );
 }
 

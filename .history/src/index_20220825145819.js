@@ -4,10 +4,6 @@ import "./index.css";
 import App from "./App";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import theme from "./theme";
-import { themeProvider } from 'styled-components'
+import {themeProvider} from 'styled-componetnts'
 
-ReactDOM.render(
-<themeProvider>
-<App />
-</themeProvider>
-, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));

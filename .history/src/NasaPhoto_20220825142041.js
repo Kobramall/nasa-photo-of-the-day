@@ -1,13 +1,10 @@
-import React from 'react';
-
-
-
+import React from 'react'
+import styled from 'styled-components'
 
  const NasaPhoto = (props) => {
     
     return(
-  
-      <div className= 'Main-body'>
+  <div className="Main-body">
     <h3>{props.photo.title}</h3>
     <img src = {props.photo.hdurl}/>
     <p>{props.photo.date}</p>

@@ -1,18 +1,22 @@
 import React from 'react';
+import styled from 'styled-components';
 
-
-
+const StyledPhoto = styled.div`
+   color: "blue",
+   display: "flex",
+   
+`
 
  const NasaPhoto = (props) => {
     
     return(
   
-      <div className= 'Main-body'>
+      <StyledPhoto>
     <h3>{props.photo.title}</h3>
     <img src = {props.photo.hdurl}/>
     <p>{props.photo.date}</p>
     <p>{props.photo.explanation}</p>
-   </div>
+   </StyledPhoto>
      )
 
 }
